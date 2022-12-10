@@ -16,7 +16,6 @@ function getAllTextFromMain() {
 // update alltext every 5 seconds
 setInterval(function () {
     let newtext = getAllTextFromMain();
-    console.log(alltext);
     if (newtext != alltext) {
         //check if the first 20 characters are the same
         if (newtext.substring(0, 20) != alltext.substring(0, 20)) {

@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "chatGPT History",
+    "description": "This extension saves your conversation into textfiles",
+    "version": "0.1.0",
+    "browser_action": {
+        "default_title": "Click to view options",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "unlimitedStorage",
+        "https://chat.openai.com/chat/*"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://chat.openai.com/chat/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ]
+}

@@ -1,3 +1,6 @@
+## IS OBSOLETE NOW
+But may still be usefull for the times when the server is struggling
+
 # INSTALLATION:
 download or clone the repo
 
